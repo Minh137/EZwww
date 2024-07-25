@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt"></p>
+    <script>
+        let a1 = 1200;
+        let a2 = 1300;
+        let a3 = 1000;
+        let a4 = Number(prompt("4분기 판매량을 입력하세요."));
+
+        let qq = (a1+a2+a3+a4)/4;
+        let rs = qq < a4 ? "좋아요~~":"야근입니다.";
+
+        document.getElementById("txt").innerHTML = rs;
+    </script>
+</body>
+</html>

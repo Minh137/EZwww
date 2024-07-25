@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt"></p>
+    <script>
+        let name = prompt("당신의 이름을 입력하세요.");
+        let kg = Number(prompt("당신의 체중을 입력하세요."));
+        let key = Number(prompt("당신의 신장를 입력하세요."));
+        let nomalWeight = (key-100)*0.9-5;
+
+        let result = nomalWeight-5<=kg<=nomalWeight+5 ? "정상체중입니다.": "정상체중이 아닙니다.";
+
+        document.getElementById("txt").innerHTML = name + "님은 " + result;
+    </script>
+</body>
+</html>

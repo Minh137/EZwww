@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 60%;
+            height: 400px;
+            border: 1px solid #333;
+            position: relative;
+        }
+        .inbox{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(232, 211, 0, 0.3);
+            top: 100px;
+            left:calc(50% - 100px);
+            /*opacity: 0.3;*/
+        }
+        h1{
+            text-align: center;
+            line-height: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        가상요소 : 요소이름::가상요소    
+    -->
+        <div class="box">
+            <p>
+            대통령은 전시·사변 또는 이에 준하는 국가비상사태에 있어서 병력으로써 군사상의 필요에 응하거나 공공의 준하는 국가비상사태에 있어서 병력으로써 군사상의 필요에 응하거나 공공의 안녕질서를 유지할 필요가 있 안녕질서를 유지할 필요가 있을 때에는 법률이 정하는 바에 의하여 계엄을 선포할 수 있다통령은 전시·사변 또는 이에 준하는 국가비상사태에 있어서 병력으로써 군사상의 필요에 응하거나 공공의 안녕질서를 유지할 필요가 있을 때에는 법률이 정하는 바에 의하여 계엄을 선포할 수 있다.
+        </p>
+        </div>
+        <div class="inbox">
+            <h1>inbox입니다.</h1>
+        </div>
+</body>
+</html>

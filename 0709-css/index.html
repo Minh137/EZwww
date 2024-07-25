@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .a{
+        color:#000;
+        text-decoration: none;
+
+    }
+    a:hover{
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #00ff00;
+        padding: 10px;
+    }
+    a:active{
+        color: red;
+
+    }
+    a:visited{
+        background: green;
+        color: greenyellow;
+    }
+    .p:hover{
+        text-decoration: underline;
+    }
+    /*
+    li:first-child{
+        background: yellow;
+    }
+    li:last-child{
+        background: #00ff00;
+        nth-child(even) , nth-child(2n) 짝수
+        nth-child(odd) , nth-child(2n-1) 홀수
+
+        first-of-type, last-of-type
+    }*/
+    li:nth-child(odd){
+        background: pink;
+    }
+    /*p:nth-child(odd){
+        background: pink;
+    }*/
+    p:nth-of-type(odd){
+        background: pink;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <!--
+        가상클래스는 요소 다음에 : 으로 표시
+    -->
+        <a href="http://musecom.net">링크입니다.</a>;
+
+        <div>박스</div>
+        <p class="p">문단</p>
+        <ol>
+            <li>신라면</li>
+            <li>삼양라면</li>
+            <li>맛있는라면</li>
+            <li>안성라면</li>
+            <li>비빔면</li>
+        </ol>
+
+        <div>
+            <p>신라면1</p>
+            <p>신라면2</p>
+            <div>삼양라면</div>
+            <p>신라면3</p>
+            <p>신라면4</p>
+            <p>신라면5</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        //1. 변수를 반드시 선언해야 쓸 수 있다. var let const
+        // const person = {
+        //     name: "철수",
+        //     age: 30,
+        //     city: "김포"
+        // }
+        // //with는 성능저하(변수를 찾기 위해 스코프를 검색해야 하므로 성능이 저하될 가능성이 있다)
+        // //가독성 저하 --> 디버깅이 어려움
+        // //엄격모드에선 with를 사용할 수 없다 
+        // with(person){
+        //     console.log(name);
+        //     console.log(age);
+        //     console.log(city);
+        // }
+        //this 변경 금지
+        //예약어 금지 --> 미래에 사용할 것 같은 예약어도 금지
+        let public = 10;
+        document.write(public);
+    </script>
+</body>
+</html>

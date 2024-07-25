@@ -1,0 +1,31 @@
+[33mc01be7c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to c01be7c654a4
+[33mc01be7c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{1}: reset: moving to c01be7c654a4
+[33mfa4ebf4[m HEAD@{2}: commit (merge): merge
+[33md57f1e2[m HEAD@{3}: checkout: moving from project2 to main
+[33m91038fd[m[33m ([m[1;32mproject2[m[33m)[m HEAD@{4}: commit: Add team Jaguars
+[33mf202118[m HEAD@{5}: commit: Add team Pumas
+[33mc01be7c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{6}: checkout: moving from main to project2
+[33md57f1e2[m HEAD@{7}: checkout: moving from project1 to main
+[33m0b01aa0[m[33m ([m[1;32mproject1[m[33m)[m HEAD@{8}: reset: moving to 0b01aa0c2d27
+[33m0b01aa0[m[33m ([m[1;32mproject1[m[33m)[m HEAD@{9}: checkout: moving from project2 to project1
+[33m757ed41[m HEAD@{10}: commit: Add team Pumas
+[33m0b01aa0[m[33m ([m[1;32mproject1[m[33m)[m HEAD@{11}: checkout: moving from project1 to project2
+[33m0b01aa0[m[33m ([m[1;32mproject1[m[33m)[m HEAD@{12}: commit: Add Coach Teddy to Panthers
+[33m09d12dd[m HEAD@{13}: commit: Add Coach Oscar to Leopards
+[33mb312c33[m HEAD@{14}: commit: Add Coach Grace to Tigers
+[33mc01be7c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{15}: checkout: moving from main to project1
+[33md57f1e2[m HEAD@{16}: commit: Add Freddles
+[33m904f515[m HEAD@{17}: checkout: moving from project1 to main
+[33mc01be7c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{18}: checkout: moving from main to project1
+[33m904f515[m HEAD@{19}: checkout: moving from project1 to main
+[33mc01be7c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{20}: checkout: moving from main to project1
+[33m904f515[m HEAD@{21}: checkout: moving from project1 to main
+[33mc01be7c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{22}: checkout: moving from main to project1
+[33m904f515[m HEAD@{23}: commit: Add Olivia to Leopards
+[33mc01be7c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{24}: checkout: moving from project1 to main
+[33mc01be7c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{25}: checkout: moving from main to project1
+[33mc01be7c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{26}: commit: Replace Cheetas with Panthers
+[33maf5a5ed[m HEAD@{27}: commit: Add team Cheetas
+[33mf26981d[m HEAD@{28}: commit: Add George to Tigers
+[33m6d03b8a[m HEAD@{29}: commit: Replace Lions width Leopards
+[33m326140b[m HEAD@{30}: commit (initial): FIRST COMMIT

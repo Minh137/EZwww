@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            width: 800px;
+            margin: 40px auto;
+        }
+        .cell{
+            width: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            float: left;
+            margin-bottom: 30px;
+        }
+        .card{
+            background: #ddd;
+            min-height: 100px;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1),
+                        0 10px 30px 0 rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        .card img{
+            max-width: 100%;
+        }
+        h1{
+            padding-bottom: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 20px;
+        }
+        .title{
+            /*display: none;*/
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">이 텍스트에 대해 알아봅시다.</h1>
+    <div class="container">
+        <div class="cell">
+            <div class="card">
+                <img src="https://picsum.photos/id/132/400/300" alt="img">
+                <h1>픽슘이미지감사원은 세입·세출의 결산을 매년 검사하여 대통령과 차년도국회에 그 결과를 보고하여야 한다. 제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다.</h1>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="card">
+                <img src="https://picsum.photos/id/320/400/300" alt="img">
+                <h1>픽슘이미지</h1>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="card">
+                <img src="https://picsum.photos/id/654/400/300" alt="img">
+                <h1>픽슘이미지</h1>
+            </div>
+        </div>
+        <div class="cell">
+            <div class="card">
+                <img src="https://picsum.photos/id/942/400/300" alt="img">
+                <h1>픽슘이미지</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="opWin();">
+    <button type="button" onclick="opWin();">창을 열자</button>
+    <h1 id="now"></h1>
+    <script>
+        function opWin(){
+            window.open("http://naver.com","naver", "width=500, height=400, top=50, left=100");
+            opWin();
+        }
+        setInterval(vTime, 1000);
+        function vTime(){
+            let today = new Date();
+            let talk = `지금은 ${today.getFullYear}년 ${today.getMonth()+1}월 ${today.getDate()}일`
+                        `${today.getHours()}시 ${today.getMinute()}분 ${today.getSeconds()}초 입니다.`;
+            document.getElementById("now").innerHTML= talk;
+        }
+    </script>
+</body>
+</html>

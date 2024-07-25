@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt"></p>
+    <script>
+        let name = prompt("당신의 이름을 입력하세요.");
+        let c1 = Number(prompt("당신의 교통비를 입력하세요."));
+        let c2 = Number(prompt("당신의 식비를 입력하세요."));
+        let c3 = Number(prompt("당신의 음료비를 입력하세요."));
+
+        let total = c1 +c2 +c3;
+        let rs = total > 10000 ? "과소치입니다.": "돈 관리를 잘 했어요.";
+
+        document.getElementById("txt").innerHTML = name+ "의 하루지출은 교통비 " +c1+", 식비 "+c2 +", 음료비 "+c3+"입니다."+rs;
+    </script>
+</body>
+</html>

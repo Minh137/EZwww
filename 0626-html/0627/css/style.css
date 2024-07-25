@@ -1,0 +1,19 @@
+<style>
+/*
+이곳은 주석입니다.
+*/
+h1{
+    color: red;
+    font-size: 50px;
+}
+p{
+    color: blue;
+    font-size: 30px;
+}
+#head1{
+    color: green;
+}
+.pink{
+    color: pink;
+}
+</style>

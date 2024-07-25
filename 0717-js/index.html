@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>시험평균 구하기</h1>
+    <p>철수는 이번시험에 국어 85, 수학 92, 영어 50, 컴퓨터 88, 역사 70점을 받았다.</p>
+    <p>철수의 평균점수는 <span id="avg"></span>이다.</p>
+    <script>
+        let scores = [85, 92, 50, 88, 70];
+        let total = 0;        
+        for(let i; i <scores.length; i++){
+            total += scores[i];
+        }
+        let avg = total / scores.length;
+        document.getElementById("avg").innerHTML = avg;
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        h1{
+            text-align: center;
+        }
+        ul{
+            margin: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+        }
+        .product{   
+            padding: 0;
+            display: flex;
+            list-style: none;
+        }
+        .product>li{
+            width: 20%;
+            padding: 10px;
+        }
+        .product>li>div{
+            border: 1px solid #999;
+            padding: 20px;
+            text-align: center;
+        }
+        #cart li{
+            border-bottom: 1px dashed #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>장바구니</h1>
+    <ul id="product-list" class="product">
+        <li>
+            <div>과일</div>
+            <div>
+                <button onclick="addItem('과일')">구매</button>
+                <button onclick="removeItem('과일')">취소</button>
+            </div>
+        </li>
+        <li>
+            <div>야채</div>
+            <div>
+                <button onclick="addItem('야채')">구매</button>
+                <button onclick="removeItem('야채')">취소</button>
+            </div>
+        </li>
+        <li>
+            <div>고기</div>
+            <div>
+                <button onclick="addItem('고기')">구매</button>
+                <button onclick="removeItem('고기')">취소</button>
+            </div>
+        </li>
+        <li>
+            <div>계란</div>
+            <div>
+                <button onclick="addItem('계란')">구매</button>
+                <button onclick="removeItem('계란')">취소</button>
+            </div>
+        </li>
+        <li>
+            <div>우유</div>
+            <div>
+                <button onclick="addItem('우유')">구매</button>
+                <button onclick="removeItem('우유')">취소</button>
+            </div>
+        </li>
+    </ul>
+    <h1>내 장바구니</h1>
+    <ul id="cart">
+        
+    </ul>
+    <script>
+        let shoppinglist =["우유"];
+
+        //장바구니 목록을 읽어서 저장하는 함수
+        function renderList(){
+            const listElement = document.getElementById("cart");
+            listElement.innerHTML = '';
+
+            for(let i=0; i<shoppinglist.length; i++){
+                const listItem = document.createElement("li");
+                listItem.textContent = shoppinglist[i];
+                listElement.appendChild(listItem);
+            }
+        }
+        function addItem(item){
+            shoppinglist.push(item);
+            renderList();
+        }
+        function removeItem(item){
+            const index = shoppinglist.indexOf(item);
+            if(index != -1){
+                
+            }
+        }
+
+        renderList();
+    </script>
+</body>
+</html>

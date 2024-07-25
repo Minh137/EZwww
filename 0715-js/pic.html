@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>갤러리</h1>
+    <div class="cont">
+        <div id="pic">
+            <img src="img/운동화1.png" alt="이미지">
+        </div>
+        <button type="button" onclick="myGall(-1)">이전</button>
+        <button type="button" onclick="myGall(+1)">다음</button>
+    </div>
+    <script>
+        let ct = 1;
+        function myGall(num){
+            if(num>1){
+                if(ct>5){
+                    ct=0;
+                }
+        ct++;
+        }else{
+            if(ct<1){
+            ct=6;
+        }
+        ct--;
+        }
+        let img = `<img src="img/운동화${ct}.png" alt="이미지">`;
+        document.getElementById("pic").innerHTML = img;
+    }
+        
+    </script>
+</body>
+</html>

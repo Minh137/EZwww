@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex rwd site</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            margin: 0;
+            font-family: malgun-gothic, "맑은 고딕", sans-serif;
+        }
+        /**HEADER**/
+        header{
+            padding: 60px;
+            text-align: center;
+            background-color: cornflowerblue;
+            color: white;
+        }
+        /**NAVIGATION**/
+        nav{
+            display: flex;
+            background-color: #333;
+        }
+        nav a{
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 700;
+        }
+        nav a:hover{
+            background: #ddd;
+            color: #000;
+        }
+        /** cluumn container **/
+        .row{
+            width: 1400px;
+            max-width: 100%;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+        }
+        aside{
+            width: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .fakeimg{
+            height: 300px;  
+            width: 100%; 
+        }
+        .fakeimg-s{
+            margin-bottom: 15px;
+            height: 60px;
+        }
+        .fakeimg img{
+            height: 300px;
+        }
+        .fakeimg-s img{
+            height:60px;
+        }
+        .fakeimg img, .fakeimg-s img{
+            width: 100%;
+            object-fit: cover;  
+        }
+        .main{
+            width: 70%;
+            padding: 70px;
+            border-right: 1px solid #ddd;
+        }
+        .main h1{
+            margin: 20px 0;
+        }
+        hr{
+            margin-bottom: 30px;
+        }
+        /* footer */
+        footer{
+            background: #ddd;
+            color: #fff;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        @media screen and (max-width: 780px) {
+            .row, nav{
+                flex-direction: column;
+            }
+            aside, .main{
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!--header //의미론적인 태그 semantic tag (=div)-->
+    <header>
+        <h1>나의 반응형 웹</h1>
+        <p>flex를 이용한 반응형 웹입니다.</p>
+    </header>
+    <!--navigation bar-->
+    <nav>
+        <a href="#">내소개</a>
+        <a href="#">내취미</a>
+        <a href="#">내친구소개</a>
+        <a href="#">내선생님소개</a>
+        <a href="#">내엄마소개</a>
+        <a href="#">내아빠소개</a>
+        <a href="#">하여튼소개</a>
+    </nav>
+    <div class="row">
+        <aside>
+            <h2>내소개</h2>
+            <h5>PHOTO OF ME</h5>
+            <div class="fakeimg"><img src="https://picsum.photos/id/237/400/300" alt="멍멍" /></div>
+            <p>헌법개정은 국회재적의원 과반수 또는 대통령의 발의로 제안된다. 국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.</p>
+            <h3>MORE Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fakeimg-s"><div class="fakeimg"><img src="https://picsum.photos/id/257/400/300" alt="멍멍" /></div></div>
+            <div class="fakeimg-s"><div class="fakeimg"><img src="https://picsum.photos/id/320/400/300" alt="멍멍" /></div></div>
+            <div class="fakeimg-s"><div class="fakeimg"><img src="https://picsum.photos/id/98/400/300" alt="멍멍" /></div></div>
+        </aside>
+        <div class="main">
+            <h2>이곳에 제목을 쓸 겁니다.</h2>
+            <h5>Title description, 2024. 07. 16</h5>
+            <div class="fakeimg"><img src="https://picsum.photos/id/12/300/100" alt="멍멍" /></div></div>
+            <p>Some text.........</p>
+            <p>공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.</p>
+            <p>모든 국민은 근로의 의무를 진다. 국가는 근로의 의무의 내용과 조건을 민주주의원칙에 따라 법률로 정한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다.</p>
+            <hr />
+            
+
+            <h2>이곳에 제목을 쓸 겁니다.</h2>
+            <h5>Title description, 2024. 07. 16</h5>
+            <div class="fakeimg"><img src="https://picsum.photos/id/665/300/100" alt="멍멍" /></div></div>
+            <p>Some text.........</p>
+            <p>공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.</p>
+            <p>모든 국민은 근로의 의무를 진다. 국가는 근로의 의무의 내용과 조건을 민주주의원칙에 따라 법률로 정한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다.</p>
+            <hr />
+
+            <h2>이곳에 제목을 쓸 겁니다.</h2>
+            <h5>Title description, 2024. 07. 16</h5>
+            <div class="fakeimg"><img src="https://picsum.photos/id/34/300/100" alt="멍멍" /></div></div>
+            <p>Some text.........</p>
+            <p>공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.</p>
+            <p>모든 국민은 근로의 의무를 진다. 국가는 근로의 의무의 내용과 조건을 민주주의원칙에 따라 법률로 정한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다.</p>
+            <hr />
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; Minh's all right reserved. 
+    </footer>
+</body>
+</html>

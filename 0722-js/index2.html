@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            display: none;
+        }
+        .red{
+            background: red;
+        }
+        .green{
+            background: green;
+        }
+        .blue{
+            background: blue;
+        }
+    </style>
+    <script src="/JS/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#a").click(function(){
+                $(".red").fadeIn("slow");
+                $(".green").fadeIn(3000);
+                $(".blue").fadeIn(5000);
+            });
+            $("#b").click(function(){
+                $(".red").fadeOut("slow");
+                $(".green").fadeOut(3000);
+                $(".blue").fadeOut(5000);
+            });
+            $("#c").click(function(){
+                $(".red").fadeToggle("slow");
+                $(".green").fadeToggle(3000);
+                $(".blue").fadeToggle(5000);
+            });
+            $(".red").click (function(){
+                $(".red").fadeTo("slow", 0.2);
+                $(".green").fadeTo(3000, 0.5);
+                $(".blue").fadeTo(5000, 0.7);
+            });
+        });  //
+    </script>
+</head>
+<body>
+    <button type="button" id="a">누르시오.1</button>
+    <button type="button" id="b">누르시오.2</button>
+    <button type="button" id="c">누르시오.3</button>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+</body>
+</html>

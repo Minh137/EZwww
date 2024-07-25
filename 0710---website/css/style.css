@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('fonts.css');
+*{ box-sizing:border-box;}
+body{
+    font-family: "Pretendard", sans-serif;
+    color:#000;
+}
+span{
+    display:block;
+}
+.a{font-weight:900; font-size:40px;}
+.b{font-weight:800; font-size:40px;}
+.c{font-weight:700; font-size:40px;}
+.d{font-weight:600; font-size:40px;}
+.e{font-weight:500; font-size:40px;}
+.f{font-weight:400; font-size:40px;}
+.g{font-weight:300; font-size:40px;}
+.h{font-weight:200; font-size:40px;}
+.i{font-weight:100; font-size:40px;}

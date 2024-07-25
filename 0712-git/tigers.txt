@@ -1,5 +1,5 @@
        team: Tigers
-       manager: George
+       manager: Donald, Grace
        members:
           - Linda
           - William

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+        .container{
+            width: 620px;
+            height: 360px;
+            background: #4260aa;
+            position: relative;
+            margin: 100px auto;
+            overflow: hidden;
+            font-family: "Noto Sans KR", sans-serif;
+            color: #fff;
+        }
+        .container p{
+            font-size: 38px;
+            font-weight: 600;
+            margin: 65px 60px;
+        }
+        .face{
+            width: 353px;
+            height: 326px;
+            background-color: white;
+            border-radius: 50%;
+            border: 5px solid #000;
+            position: absolute;
+            top: 99px;
+            left: 357px;
+        }
+        .eyes{
+            width: 15px;
+            height: 15px;
+            background-color: #000;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .eyes-l{
+            top: 136px;
+            left: 134px;
+        }
+        .eyes-r{
+            top: 132px;
+            left: 191px;
+        }
+        .nose{
+            width: 60px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: #A8e6ff;
+            border: 3px solid #A8e6ff;
+            position: absolute;
+            top: 148px;
+            left: 141px;
+            overflow: hidden;
+        }
+        .nostrils{
+            width: 40px;
+            height: 35px;
+            border: 5px solid #000;
+            border-radius: 50%;
+            position: absolute;
+            top: -12px;
+        }
+        .nose-l{
+            left: -17px;
+        }
+        .nose-r{
+            right: -17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            니니즈와 함께 하는<br>
+            서포터즈 카페<br>
+            구경하실래요?
+        </p>
+        <div class="face">
+            <div class="eyes eyes-l"></div>
+            <div class="eyes eyes-r"></div>
+            <div class="nose">
+                <div class="nostrils nose-r"></div>
+                <div class="nostrils nose-l"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

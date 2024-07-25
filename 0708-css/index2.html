@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box;}
+        .title{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container{
+            width: 650px;
+            margin: 30px auto;
+        }
+        .col{
+            width: 33.33333%;
+            height: 220px;
+            overflow: hidden;
+            float: left;
+            padding: 15px;
+            position: relative;
+        }
+        .col img{
+            max-width: 100%;
+        }
+        .col div{
+            text-align: center;
+            width: 100%;
+            height: 80px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.7);
+            display: none;
+        }
+        .col:hover div{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">카카오 캐릭터</h1>
+    <div class="container">
+        <div class="col"><img src="/0708-css/image/KakaoTalk_20240708_163311998.png" alt="카카오"><div><h2>프로도</h2></div></div>
+        <div class="col"><img src="/0708-css/image/KakaoTalk_20240708_163311998_01.png" alt="카카오"><div><h2>라이언</h2></div></div>
+        <div class="col"><img src="/0708-css/image/KakaoTalk_20240708_163311998_02.png" alt="카카오"><div><h2>튜브</h2></div></div>
+    </div>
+</body>
+</html>

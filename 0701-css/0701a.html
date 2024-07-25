@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: white;
+            background-color: blue;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px 40px;
+        }
+        p{
+            color: rgb(255, 255, 0);
+            background-color: rgb(0, 0, blue);
+        }
+        .a{
+            color: #ff0000;
+            background-color: #ffff00;
+
+            /* 축약버젼 */
+            border: 30px, solid, #000;
+        }
+        .b{
+            color:  white;
+            background-color: hsl(255, 69%, 77%);
+        }
+        .box{
+            height:0;
+            border-top:30px solid red;
+            border-right:30px solid transparent;
+            border-bottom:30px solid transparent;
+            border-left:30px solid transparent;
+        }
+        
+
+/*
+    폰트의 색상 : color
+    바탕화면의 색상 : background-color
+    0 ~ f  #000000 검정   #ffffff  흰색
+    HSL : hue  saturation, lightness
+    텍스트
+    Hex : 16진수 # 00 00 00
+    RGB : 10진수 rgb(255, 255, 255, 0.5); //a 투명도 1이 불투명 0이 투명 (소수점으로 표시)
+    HSL : 색상값 hsl(hue, saturation, lightness);
+
+    외곽선
+    border - 두께(border-width), 색상(border-color), 스타일(border-style)
+
+    블록은 width , height 을 가질 수 있다. (inline 태그는 갖지 못한다.)
+
+*/
+</style>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <div class="box"></div>
+    <p >국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출 또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다.</p>
+
+    <p class="a">정당의 설립은 자유이며, 복수정당제는 보장된다. 국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다.</p>
+
+    <p class="b">국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다. 대통령은 국가의 안위에 관계되는 중대한 교전상태에 있어서 국가를 보위하기 위하여 긴급한 조치가 필요하고 국회의 집회가 불가능한 때에 한하여 법률의 효력을 가지는 명령을 발할 수 있다.</p>
+
+
+</body>
+</html>

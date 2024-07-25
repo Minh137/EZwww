@@ -1,0 +1,66 @@
+*{box-sizing: border-box;}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    /*
+    1개: top-right-bottom-left
+    2개: top-bottom, left-right
+    3개: top, left-right, bottom
+    4개: top, right, bottom, left
+    서로 부딪힐때는 큰쪽만 적용된다.
+
+    inline은 margin-top, margin-bottom은 적용되지 않는다.
+    width, height도 적용되지 않는다.
+    */
+
+
+}
+.box2{
+    width: 50px;
+    height: 50px;
+    background: red;
+    margin-top: 50px;
+}
+.box3{
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.sns{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    border-radius: 50px;
+    background-image: url(/0702.css/image/Untitled-1.png);
+    background-position: -3px -3px;
+    background-repeat: no-repeat;
+}
+.sns1{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    border-radius: 50px;
+    background-image: url(/0702.css/image/Untitled-1.png);
+    background-position: -190px -3px;
+    background-repeat: no-repeat;
+}
+.sns2{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    border-radius: 50px;
+    background-image: url(/0702.css/image/Untitled-1.png);
+    background-position: -189px -43px;
+    background-repeat: no-repeat;
+}
+.sns3{
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    border-radius: 50px;
+    background-image: url(/0702.css/image/Untitled-1.png);
+    background-position: -189px -165px;
+    background-repeat: no-repeat;
+}
