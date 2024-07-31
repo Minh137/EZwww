@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tab{
+            width: 100%;
+            background: lightgray;
+            display: flex;
+            line-height: 55px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 60px;
+        }
+        .tab-manu{
+            padding: 0 20px;
+            cursor: pointer;
+        }
+        .tab-manu:hover{
+            background: gray;
+        }
+        .ddd{
+            border: 1px solid lightgray;
+        }
+        .london, .paris, .seoul{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tab</h1>
+        <div class="tab">
+            <div class="tab-manu m1">London</div>
+            <div class="tab-manu m2">Paris</div>
+            <div class="tab-manu m3">Seoul</div>
+        </div>
+        <div class="ddd">
+            <div class="london">
+                <h2>London</h2>
+                <p>런던은 지리적으로 잉글랜드 남동부에 위치하며 영국의 수도이자 영국의 정치, 경제, 문화, 교통의 중심지로 영국에서 가장 큰 도시이다. 런던시(City of London)와 32개의 자치구(Borough)를 포함하여 그레이터런던을 구성한다.
+
+                    런던의 어원은 런던은 AD 1세기에 기록된 고대 로마 시절 지역명인 ‘론디니움(Londinium)’에서 유래되었는데, 이외에도 고대 영어 ‘룬덴(Lunden)’ 및 웨일스어 ‘런디엔(Llundein)’에서 기원을 찾기도 한다. 런던이라는 명칭은 1889년까지는 공식적으로 런던시(City of London)를 가리키는 것이었지만, 이후에는 런던시를 중심으로 하는 광역권을 의미하는 그레이터런던의 명칭으로도 사용되고 있다.
+
+                    런던은 세계에서 가장 영향력 있는 도시 가운데 하나로 전 세계의 문화예술, 산업, 교육, 엔터테인먼트, 법률, 금융, 미디어, 전문 서비스, 관광, 교통을 선도하는 도시이다. 특히 뉴욕, 홍콩 등과 함께 세계적인 금융 도시의 역할을 하고 있다.
+                    [네이버 지식백과] 런던 [London] (두산백과 두피디아, 두산백과)</p>
+            </div>
+            <div class="paris">
+                <h2>Paris</h2>
+                <p>파리라는 이름은 초기 거주자인 켈트족의 일파인 파리지(Parisii)족에서 유래되었다. 이는 그리스 신화의 파리스와는 관련성이 없다. 파리는 별칭으로 흔히 ‘빛의 도시(La Ville Lumière)’로 불리는데, 대로와 기념물에 가스 조명을 대규모로 사용한 최초의 유럽 대도시 중 하나였기 때문에 붙여졌다.
+
+                    가스등은 1829년 일부 거리에 처음 설치된 후 1857년에 이르러 그랑 블루바르에도 가스등이 켜졌다. 1860년대까지 파리의 대로와 거리는 56,000개의 가스등으로 밝혀졌다. 하지만 나중에는 이 도시가 계몽주의 시대의 주도적인 역할을 하면서 상징적인 의미로 쓰이기도 했다.
+                    
+                    19세기 후반부터 파리는 당시 속어로 ‘파남(Paname)’이라고도 불렸다. 거주민들은 프랑스어로 ‘파리인(Parisiens [paʁizjɛ̃])’이라 한다. 그들은 또한 ‘파리고(Parigots)’라고도 불린다.
+                    [네이버 지식백과] 파리 [Paris] (유럽지명사전 : 프랑스)</p>
+            </div>
+            <div class="seoul">
+                <h2>Seoul</h2>
+                <p>서울은 우리나라의 수도이자 심장부예요. 정치와 경제, 문화와 역사의 중심지이기도 하지요. 조선 시대에는 ‘한양’이라 불렸고, 일제강점기에는 ‘경성부’라고 불리다가 1945년 광복과 함께 ‘서울’로 이름이 바뀌었지요. 서울은 1948년 대한민국 정부가 수립되면서 수도로 결정되었고, 1949년에는 서울특별시로 승격되었어요.
+                    [네이버 지식백과] 대한민국의 수도, 서울 (지도로 배우는 우리나라 우리고장 - 서울 · 경기, 2009.07.30., 정명숙, 유남영)서울의 인구는 10,456,000명(2008년 기준) 정도로 인구 밀도가 아주 높아요. 서울은 우리나라 전체 국토 면적의 0.6%밖에 안 되지만, 인구가 1000만 명이 넘어요.</p>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            $(".m1").click(function(){
+                reset();
+                $(".m1").css("background-color","gray");
+                $(".london").show();
+            })
+            $(".m2").click(function(){
+                reset();
+                $(".m2").css("background-color","gray");
+                $(".paris").show();
+            })
+            $(".m3").click(function(){
+                reset();
+                $(".m3").css("background-color","gray");
+                $(".seoul").show();
+            })
+
+            function reset(){
+                $(".tab-manu").css("background-color","lightgray");
+                $(".london, .paris, .seoul").hide();
+            }
+        })
+    </script>
+</body>
+</html>

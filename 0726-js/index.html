@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+        }
+        .color{
+            background-color: red;
+        }
+        
+    </style>
+    <script src="../JS/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function(){
+            $(".addbtn").click(function(){
+                $(".box").addClass("color");
+            });
+            $(".removebtn").click(function(){
+                $(".box").removeClass("color");
+            });
+            $(".togglebtn").click(function(){
+                $(".box").toggleClass("color");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <button class="addbtn">색깔 바꾸기</button>
+    <button class="removebtn">색깔 빼기</button>
+    <button class="togglebtn">토글</button>
+<br>
+    <button onClick="addbtn()">색깔입히기</button>
+    <button onClick="removebtn()">색깔빼기</button>
+    <button onClick="togglebtn()"></button>
+<br>
+    <button id="addbtn">색깔입히기</button>
+    <button id="removebtn">색깔빼기</button>
+    <button id="togglebtn">토글</button>
+
+    <script>
+        const box = document.getElementsByClassName("box")[0];
+        function addbtn(){
+            if(!box.className.includes("color")){
+            box.className += " color";
+            }  
+        }
+        function removebtn(){
+                box.className = box.className.replace(/\bcolor/g, '').trim();                            
+            }
+        document.getElementById("addbtn").addEventListener("click", function(){
+            box.classList.add("color");
+        });
+        document.getElementById("removebtn").addEventListener("click", function(){
+            box.classList.remove("color");
+        });
+        document.getElementById("togglebtn").addEventListener("click", function(){
+            box.classList.toggle("color");
+        })
+    </script>
+</body>
+</html>
