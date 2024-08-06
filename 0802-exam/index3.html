@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Current URL</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var currentURL = window.location.href;
+            console.log(currentURL);
+            document.getElementById("urlDisplay").innerText = "현재 웹사이트의 URL: " + currentURL;
+        });
+    </script>
+</head>
+<body>
+    <h1>웹사이트 URL 가져오기</h1>
+    <p id="urlDisplay"></p>
+</body>
+</html>

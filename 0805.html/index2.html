@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .img-box{
+            
+            width: 275px;
+        }
+        .b-img>img{
+            width: 275px;
+            height: 275px;
+            object-fit: cover;
+            object-position: center top;
+            border: 1px solid #333;
+            display: block;
+        }
+        .s-box{
+            display: flex;
+        }
+        .s-box img{
+            width: 25%;
+            border-left: 1px solid #333;
+            border-bottom: 1px solid #333;
+            cursor: pointer;
+        }
+        .s-box img:last-child{
+            border-right: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="img-box">
+        <div class="b-img">
+            <img src="../0805.html/운동화2.png" alt="운동화2" >
+        </div>
+        <div class="s-box">
+            <img src="../0805.html/운동화2.png" alt="운동화2">
+            <img src="../0805.html/운동화3.png" alt="운동화3">
+            <img src="../0805.html/운동화4.png" alt="운동화4">
+            <img src="../0805.html/운동화5.png" alt="운동화5">
+        </div>
+    </div>
+    
+    <script>
+        const thumbnails = document.querySelectorAll(".s-box img");
+
+        thumbnails.forEach(function(thumbnail){
+        thumbnail.addEventListener("click", function(e){
+            const changeImg = e.target.src;
+            document.querySelector(".b-img img").src=changeImg;
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            border: 1px solid #333;
+            width: 450px;
+            padding: 20px;
+            text-align: center;
+        }
+        button{
+            border: none;
+            background-color: #5555;
+        }
+        .button{
+            margin-left: 35px;
+            padding: 10px;
+        }
+        .rs span{
+            display: inline-block;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <span>섭씨(화씨)</span>
+            <input type="text" id="f-number">
+            <span>`C(`F)</span>
+        </div>
+        <div class="button">
+            <button type="button" onclick="a()">화씨로 변환</button>
+            <button type="button" onclick="b()">섭씨로 변환</button>
+        </div>
+        <div class="rs" id="rs">변환한 결과는<span id="rs-span"></span>입니다.</div>
+        <script>
+            function convertToFC(celsius){
+                const fahrenheit = (celsius * 9/5) + 32;
+                return fahrenheit;
+            }
+            function convertToFC(fahrenheit){
+                const celsius = (fahrenheit - 32) * 5/9;
+                return celsius;
+            }
+            console.log("섭씨")
+
+            // function a(){
+            //     var num = parseFloat(document.getElementById("f-number").value);
+            //     var rs = (num*9/5)+32;
+            //     document.getElementById("rs-span").innerText = rs +"`F";
+            // }
+            // function b(){
+            //     var num = parseFloat(document.getElementById("f-number").value);
+            //     var rs = (num-32)/9*5;
+            //     document.getElementById("rs-span").innerText = rs +"`c";
+            // }
+        </script>
+</body>
+
+</html>

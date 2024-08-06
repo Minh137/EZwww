@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container{
+            border: 1px solid #333;
+            width: 400px;
+            padding: 30px;
+            text-align: center;
+        }
+        button{
+            border: none;
+            background-color: #5555;
+        }
+        .button{
+            margin-left: 90px;
+            padding: 10px;
+        }
+        .rs span{
+            display: inline-block;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <span>1st number</span>
+            <input type="text" id="f-number">
+        </div>
+        <div>
+            <span>2st number</span>
+        <input type="text" id="s-number">
+        </div>
+        <div class="button">
+            <button type="button" onclick="a()">곱하기</button>
+            <button type="button" onclick="b()">나누기</button>
+        </div>
+        <div class="rs" id="rs">두 수를 곱한(나눈) 결과는<span id="rs-span"></span>입니다.</div>
+    </div>
+    <script>
+        function a(){
+            var num1 = parseFloat(document.getElementById("f-number").value);
+            var num2 = parseFloat(document.getElementById("s-number").value);
+            // if(!num1 || !num2){
+            //     alert("값을 입력하지 않았습니다.");
+            // }else if(isNaN(num1) || isNaN(num2)){
+            //     alert("값은 숫자만 입력하셔야 합니다.");
+            // }
+            if(!num1 || !num2){
+                alert("값을 입력하지 않았습니다.");
+            }else if(/0-9/.text(num1) || /0-9/.text(num2)){
+                alert("값은 숫자만 입력하셔야 합니다.")
+            }
+            var rs = num1 * num2;
+            document.getElementById("rs-span").innerText = rs;
+        }
+
+        function b(){
+            var num1 = parseFloat(document.getElementById("f-number").value);
+            var num2 = parseFloat(document.getElementById("s-number").value);
+            var rs = num1 / num2;
+            document.getElementById("rs-span").innerText = rs;
+        }
+
+    </script>
+</body>
+</html>

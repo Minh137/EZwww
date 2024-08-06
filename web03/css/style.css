@@ -310,6 +310,91 @@ section.best-date{
  .banner-icon .event::after{
     content:"event";
  }
+/***************Sec customer*****************/
+.customer{
+    height: 330px;
+}
+.customer-title{
+    margin:15px 40px;
+    font-size:30px;
+    line-height:1.5;
+    border-bottom:1px dashed #999; 
+    padding-bottom: 2px;
+}
+.tel{
+    margin-left: 50px;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}   
+.big-text{
+    margin-left: 50px;
+    font-size: 19px;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+.text-text{
+    margin-left: 50px;
+    color: #666;
+    font-size: 15px;
+    line-height: 23px;
+}
+.customer p{
+    padding: 5px;
+}
+.customer button{
+    margin-left: 50px;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 0%;
+    padding: 11px 33px;
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+/***************************************/
+footer{
+    background-color: #efefef;
+    text-align: center;
+    font-size: 15px;
+    height: 270px;
+}
+.footer-nav{
+    margin-top: 20px;
+    height: 60px;
+}
+.footer-nav a{
+    line-height: 80px;
+}
+footer div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-nav a{
+    padding: 20px;
+}
+.footer-nav a:last-child{
+    font-weight: 600;
+}
+footer span{
+    padding: 13px;
+}
+.info{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+.escrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.escrow img{
+    width: 37px;  
+}
+
+
+
 
 
 @keyframes slides {

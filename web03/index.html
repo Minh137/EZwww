@@ -96,16 +96,16 @@
       <div class="container">
          <h1 class="list-title caudex-bold">BEST ITEM</h1>
          <ul class="list-ul">
-            <li><a href="#">아우터</a></li>
-            <li><a href="#">팬츠</a></li>
-            <li><a href="#">티셔츠</a></li>
-            <li><a href="#" class="active">전체보기</a></li>
+            <li><a href="#" onClick="filterProducts(event, '아우터')">아우터</a></li>
+            <li><a href="#" onClick="filterProducts(event, '팬츠')">팬츠</a></li>
+            <li><a href="#" onClick="filterProducts(event, '티셔츠')">티셔츠</a></li>
+            <li><a href="#" class="active" onClick="filterProducts(event, '전체보기')">전체보기</a></li>
          </ul>
          <div class="row mt-60" id="pdlist">
             <div class="col-3 col-m6 my-30">
                <div class="pdbox">
                   <a href="#" class="pd-link">
-                     <img src="images/pd/001.gif" alt="001">
+                     <img src="../web03/images/pd/001.gif" alt="001">
                   </a>
                      <h4 class="pd-title"><a href="#">티엘 쉬폰소매 블라우스</a></h4>
                      <p><del>49,800원</del></p>
@@ -134,6 +134,52 @@
          </div>
       </div>      
    </section>
+   <section class="customer container mt-60 m-mb30">
+      <div class="row">
+         <div class="col-4 col-m12">
+            <h1 class="customer-title caudex-bold">Customer Center</h1>
+            <p class="tel"><a href="tel:1500-4544">1500-4544</a></p>
+            <div class="text-text">
+               <p>전화상담 AM 10:00 ~ AM 10:01</p>
+               <p>(게시판, 카카오톳 AM 09:00 ~ AM 09:01)</p>
+               <p>(토/일/공휴일/주중 휴무)</p>
+            </div>
+         </div>
+         <div class="col-4 col-m12">
+            <h1 class="customer-title caudex-bold">Delivery</h1>
+            <p class="big-text">반품주소 (CJ대한통운 택배)</p>
+            <p class="text-text">경기도 김포시 고촌읍 전호리 748 CJ대한통운 리더스대리점 내 패스트박스(뮬리안)</p> 
+            <button type="button">택배사 배송조회 바로가기</button>
+         </div>
+        
+         <div class="col-4 col-m12">
+            <h1 class="customer-title caudex-bold">Bank Info</h1>
+            <p class="big-text">예금주 : 주식회사 내옷담컴</p>
+            <div class="text-text">
+               국민 : 01000-1212-12121 | 농협 : 321-1234-12345 <br>
+               우리 : 1234-12345-6454
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer class="col-12 col-m12">
+      <nav class="footer-nav">
+         <a href="#">이용약관</a>
+         <a href="#">개인정보 처리방침</a>
+      </nav>
+      <div class="info">
+         <span>상호 : 주식회사 내옷닷컴</span>
+         <span>대표 : 나대표</span>
+         <span>주소 : 서울시 여러분 내가 왕초</span>
+         <span>TEL : 0521-1526</span>
+         <span>FAX : 1234-1234</span>
+      </div>
+      <div class="escrow">
+         <img src="../web03/images/footer.jpg" alt="footer">
+         <span>안전거래를 위해 KB에스크로의 구매안전(에스크로)에 가입하여 서비스를 제공하고 있습니다.<a href="">(가입확인)</a></span>
+      </div>
+      <p class="copyright">Copyright 2024 &copy; minh's all rights reserved.</p>
+   </footer>
    <script src="js/script.js"></script>
 </body>
 </html>
