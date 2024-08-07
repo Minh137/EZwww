@@ -392,9 +392,22 @@ footer span{
 .escrow img{
     width: 37px;  
 }
-
-
-
+/************detail*************/
+.detail-box{
+    margin-top: 50px;
+    border-top: 1px solid #333;
+    padding-top: 60px;
+    margin-bottom: 70px;
+}
+.detail-img img{
+    width: 100%;
+}
+.cost{
+    display: flex;
+    position: relative;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 40px;
+}
 
 
 @keyframes slides {
