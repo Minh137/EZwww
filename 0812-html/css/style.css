@@ -1,0 +1,110 @@
+*{box-sizing: border-box;}
+html,body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #222328;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 650px;
+    width: 215px;
+    padding-top: 20px;
+}
+.container{
+    width: 785px;
+    margin-left: 210px;
+    border: 1px solid #ddd;
+}
+ul.gnb,ul.lnb{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+ul.gnb{
+    margin-top: 50px;
+}
+ul.gnb>li{
+    transition: all 300ms;
+    border-bottom: 2px dashed rgb(39, 94, 177);
+}
+ul.gnb>li>a{
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+ul.gnb>li>a:hover{
+    background: skyblue;
+}
+ul.gnb>li:hover a{
+    color: rgb(39, 94, 177);
+}
+ul.lnb{
+    display: none;
+}
+ul.lnb>li>a{
+    display: block;
+    padding: 10px 30px;
+}
+ul.lnb>li:hover{
+    background: skyblue;
+}
+ul.lnb>li:hover>a{
+    font-weight: bold;
+}
+.hero{
+    height: 350px;
+    position: relative;
+}
+.hero img{
+    position: absolute;
+}
+.act01{
+    z-index: 2;
+}
+.act02{
+    z-index: 1;
+}
+.main{
+    height: 200px;
+    display: flex;
+    border: 1px solid #333;
+}
+.main>div{
+    width: 30%;
+}
+.main div.notice{
+    width: 40%;
+}
+.banner img{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.quick{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 5px 5px 15px 15px;
+}
+.sns{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #ddd;
+    margin: 10px;
+    background-image: url(../images/다운로드.png);
+    background-repeat: no-repeat;
+}
+.band{
+    background-position: -90px -23px;
+}
+footer{
+    height: 100px;
+}
