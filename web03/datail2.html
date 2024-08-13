@@ -61,7 +61,7 @@
                 <p class="title-content">간편하게 원피스 하나로 센스있는 그날의 스타일링 완성!</p>
                                         너무 밋밋하지도 않으면서 너무 과하지 않는, 원피스 한장으로 멋내기 성공 :)
                 <ul class="detail-list">
-                    <li><label>소비자가</label><span><del>69,000원</del></span></li>
+                    <li><label>소비자가</label><span><del>80,000원</del></span></li>
                     <li><label>판매가</label>
                         <span><ins>29,900원</ins></span>
                         <span class="dwn">57%</span>
@@ -104,12 +104,26 @@
                         </div>
                     </li>
                 </ul>
-                <div id="total-box">
-
+                <div id="total-box" class="display-none">
+                    <div class="option-box">
+                        <label id="selected-option">수량</label>
+                        <div class="quantity-box">
+                           <span class="dec"><i class="fa-solid fa-caret-down"></i></span>
+                           <div><input type="text" name="quintity" id="quintity" value="1" min="1" max="10"></div>
+                           <span class="inc"><i class="fa-solid fa-caret-up"></i></span>
+                        </div>
+                        <p class="p-price">34,000원</p>
+                        <div class="closeinit">
+                           <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                        <input type="hidden" name="select-price" class="select-price">
+                    </div>
+                    <p class="total-price"><span>총 상품 금액 : </span><span id="total-price">1,000,000</span> 원</p>
                 </div>
-                <input type="hidden" id="size" name="size" value="">
-            </form>
-          </div>
+                <input type="hidden" id="or-pd-price" value="80000">
+                <input type="hidden" id="pd-price" value="29900">
+                <input type="hidden" id="size" name="size" />
+                <input type="hidden" id="totalAmount" name="totalAmount">
       </div>
    </div>
    <section class="customer container mt-60">
