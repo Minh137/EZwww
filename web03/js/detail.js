@@ -111,6 +111,7 @@ function updateTotalBox() {
       
       totalAmountTxt.textContent = selectPrice.toLocaleString();
       totalAmountInput.textContent = selectPrice;
+      
    }
 }
 
