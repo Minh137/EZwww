@@ -29,3 +29,11 @@ $(document).ready(function(){
 
     setInterval(showSlide, 3000);
 });
+
+// function showSlide(){
+//     $(".slide-wrapper").animate(){
+//         {"left": "-100%"}, 300, function(){
+            
+//         }
+//     }
+// }

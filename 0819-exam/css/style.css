@@ -4,7 +4,7 @@ html,body{
 }
 .container{
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 200px);
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -83,18 +83,24 @@ ul.sub-menu{
 }
 /**          slide          **/
 .slide{
-    width: 1200px;
+    width: calc(100% - 600px);
     height: 100%;
     position: relative;
     overflow: hidden;
 }
 .slide-wrapper{
+    width: 300%;
+    height: 100%;
     display: flex;
     transition: transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .slide-wrapper img{
-    padding: 0;
-    margin: 0;
+    width: calc(100% / 3);
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -107,7 +113,8 @@ ul.sub-menu{
 
 
 footer{
-    width: 1800px;
+    width: 100%;
     height: 200px;
+    background: #ddd;
 }
 
