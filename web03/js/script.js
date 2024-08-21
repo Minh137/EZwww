@@ -60,10 +60,10 @@ function displayProducts(category) {
          productData += `
          <div class="col-3 col-m6 my-30">
               <div class="pdbox">
-                 <a href="detail.html" class="pd-link">
+                 <a href="detail2.html" class="pd-link">
                     <img src="${filterProducts[i].img}" alt="001">
                  </a>
-                    <h4 class="pd-title"><a href="detail.html">${filterProducts[i].pdname}</a></h4>
+                    <h4 class="pd-title"><a href="detail2.html">${filterProducts[i].pdname}</a></h4>
                     <p><del>${formatLocale(filterProducts[i].delprice)}</del></p>
                     <p>${formatLocale(filterProducts[i].price)}</p>
                     <div class="colorbox">
