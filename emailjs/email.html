@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        받는 사람 <input type="text" name="sendname" /><br><br>
+        메시지 <textarea name="sendmessage" cols="30" rows="5" id="sendmessage" ></textarea>
+        <button type="button" onclick="send()">보내기</button>
+    </form>
+    <script>
+        function send(){
+            const from_name = document.getElementById("sendname").value;
+            const message = document.getElementById("sendmessage").value;
+            emailjs.send( "minh137", "template_8wifdxr", {
+                to_name: '받는 사람 이메일',
+                from_name: '보내는 사람 이메일',
+                message: '이메일 내용',
+                replay_to: '회신확인'
+            });
+        }
+    </script>
+</body>
+</html>
